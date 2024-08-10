@@ -6,31 +6,31 @@ if( $_SESSION['admin']==false){
   header('location:../');
 }
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <!-- Boxiocns CDN Link -->
+  Boxiocns CDN Link
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Bootstrap CSS -->
+   Bootstrap CSS
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
   <div class="sidebar close">
     <div class="logo-details">
-      <!-- place logo in this dive -->
+      place logo in this dive
       <i class='bx bxl-c-plus-plus'></i>
       <span class="logo_name">MOtoGT</span>
     </div>
     <ul class="nav-links">
       <li>
         <a href="#">
-          <i class='bx bx-grid-alt'></i>
+        <i class="fa-regular fa-grid-2"style="color: #ffffff;"></i>
           <span class="link_name">Dashboard</span>
         </a>
       </li>
@@ -45,18 +45,18 @@ if( $_SESSION['admin']==false){
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-collection'></i>
+          <i class="fa-solid fa-users" style="color: #ffffff;"></i>
             <span class="link_name">Users</span>
           </a>
         </div>
       </li>
       <li>
         <a href="#">
-          <i class='bx bx-cog'></i>
+        <i class="fa-solid fa-gear"></i>
           <span class="link_name">Setting</span>
         </a>
       </li>
-      <!-- admin detail and logout -->
+      admin detail and logout
       <li>
         <div class="profile-details">
           <div class="profile-content">
@@ -77,6 +77,7 @@ if( $_SESSION['admin']==false){
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu'></i>
+      <i class="fa-solid fa-bars"></i>
       <span class="text">Dashboard</span>
     </div>
     <div class="container">
@@ -87,7 +88,7 @@ if( $_SESSION['admin']==false){
   </section>
 
 
-  <!-- <div class="one"></div> -->
+  <div class="one"></div>
 
   <script>
     let arrow = document.querySelectorAll(".arrow");
@@ -98,15 +99,15 @@ if( $_SESSION['admin']==false){
       });
     }
     let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".bx-menu");
+    let sidebarBtn = document.querySelector(".fa-bars");
     console.log(sidebarBtn);
     sidebarBtn.addEventListener("click", () => {
       sidebar.classList.toggle("close");
     });
   </script>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
+  Option 1: Bootstrap Bundle with Popper
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 
-</html>
+</html> -->

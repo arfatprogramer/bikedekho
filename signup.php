@@ -46,7 +46,24 @@ if (isset($_POST['submit'])) {
         $cpass = "Passwords do not match";
     }
 
-    
+    if(empty($fname) &&empty($lname) &&empty($phone) &&empty($gmail) &&empty($pass) &&empty($user) && isset($cpass))
+      {// $servername = "localhost";
+    //     $u = "root";
+    //     $p = "";
+    //     $dbname = "bikedekho";
+        
+    //     // Create connection
+    //     $conn = new mysqli($servername, $u, $p, $dbname);
+            include'./database/conn.php';
+            $sql = "INSERT INTO users (first_Name, last_Name, phone_Number, gmail, username, password) VALUES ('$firstName', '$lastName', '$phoneNumber','$email','$username', '$password')";
+            ECHO $sql;
+            // die;
+            if ($conn->query($sql)) {
+                echo "New record created successfully";
+              } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+              }
+    }
 } 
 
 // Function to sanitize input

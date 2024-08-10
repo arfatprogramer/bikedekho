@@ -37,25 +37,18 @@ if(isset($_SESSION['login'])){
         <?php 
         
         if($_SESSION['login']===true){
-            echo' <div class="dropdown">
-                     <button class="nav-btn">Mo Arfat</button>
-                     <div class="dropdown-content">
-                        <a href="./profile.php"><li >Profile</li></a>
+            echo" <div class='dropdown'>
+                     <button class='nav-btn'>".$_SESSION['username']."</button>
+                     <div class='dropdown-content'>
+                        <a href='./profile.php'><li >Profile</li></a>
                         
-                        <a href="./logout.php"><li>Loout</li></a>
+                        <a href='./logout.php'><li>Loout</li></a>
                      </div>
-                </div>';
+                </div>";
             
         }
         else{
-            echo' <div class="dropdown">
-                     <button class="nav-btn">Login</button>
-                     <div class="dropdown-content">
-                        <a href="./login.php"><li >User Login</li></a>
-                        <a href="./signup.php"><li >User SignUp</li></a>
-                        <a href="./admin/"><li >Admin Login</li></a>
-                     </div>
-                </div>';
+            echo'  <a href="./login.php"><li ><button class="nav-btn">Login</button></li></a>';
         }
        
 
