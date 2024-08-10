@@ -1,0 +1,20 @@
+.profile-container{
+    height: 90vh;
+    width: 80%;
+    box-shadow: 0 0 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img-div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(179, 45, 45);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-info-div{
+    margin-top: 20px;
+    
+}

@@ -1,0 +1,5 @@
+CREATE TABLE `bikedekho`.`users` (`ID` INT(4) NOT NULL AUTO_INCREMENT , `first_Name` TEXT NOT NULL , `last_Name` TEXT NOT NULL , `phone_Number` BIGINT(10) NOT NULL , `gmail` TEXT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `user_Type` TEXT NOT NULL DEFAULT 'user' , `create_At` TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP , `active` BOOLEAN NOT NULL DEFAULT TRUE , PRIMARY KEY (`ID`)) ENGINE = InnoDB COMMENT = 'User data Table';
+
+
+
+INSERT INTO `users` (`ID`, `first_Name`, `last_Name`, `phone_Number`, `gmail`, `username`, `password`, `user_Type`, `create_At`, `active`) VALUES (NULL, 'Mo Arfat', 'Ansari', '9104045985', 'arfata701@gmail.com', 'arfatuser', 'user123', 'user', 'urrent_timestamp(', '1');
