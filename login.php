@@ -56,6 +56,7 @@ function clean_input($data) {
 
 ?>
 <?php include"./layout/header.php"?>
+<!-- <h1 name="name" style="display:none;">Login</h1> -->
 <main>
 
 <div class="form-container" id="loginForm">

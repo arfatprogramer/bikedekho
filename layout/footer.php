@@ -1,6 +1,25 @@
 <footer>
-    <center><h1>this is Footer</h1></center>
-    </footer>
+   <div class="container">
+   <div><center><h2>This Website created By Mo Arfat Ansari</h2>
+   <h3>All CopyRight Goes to Mo Arfat</h3></center></div>
+    
+   </div>
+
+</footer>
+<script type="text/JavaScript">
+    let nameElement = document.getElementsByName("name")[0];
+    let lis = document.getElementsByTagName("li");
+
+    for (let i = 0; i < lis.length; i++) {
+      let li = lis[i];
+      if (li.textContent === nameElement.textContent) {
+        document.title=li.textContent;
+        li.classList.add("active"); 
+        
+        break;
+      }
+    }
+  </script>
 </body>
 
 </html>

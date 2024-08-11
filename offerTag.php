@@ -6,5 +6,4 @@
         <h3>Sepcial Offer</h3>
         <div class="circle"></div>
     </div>
-    
  </div>

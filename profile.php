@@ -5,7 +5,7 @@ if($_SESSION['login']==false){
 }
 ?>
 
-
+<h1 name="name" style="display:none;">Profile</h1>
 <div class="container">
 <div class="profile-container">
     <div class="profile-img-div">
@@ -17,3 +17,4 @@ if($_SESSION['login']==false){
     </div>
 </div>
 </div>
+<?php include "./layout/footer.php"; ?> 

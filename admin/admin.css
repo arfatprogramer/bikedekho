@@ -12,7 +12,7 @@ body{
 .aside{
     /* position: fixed; */
     height: 100vh;
-    min-width: 18%;
+    min-width: 16%;
     background-color: rgba(0, 0, 0, 0.932);
     opacity: 0.9;
     position: relative;
@@ -65,7 +65,8 @@ body{
 .main{
    
     right: 0px;
-    width: 82%;
+    width: 84%;
     height: 100vh;
     background-color:rgb(171, 176, 176) ;
+    overflow: auto;
 }

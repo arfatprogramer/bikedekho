@@ -1,7 +1,12 @@
-td,th{
+
+th,td{
     font-size: 18px;
+    text-align: start;
+    width:auto;
 }
-#option{
-    text-align: center;
-    width:160px;
+.status{
+    font-size: 11px;
+    padding: 2px;
+    color: #fff;
+    border-radius:20px ;
 }
