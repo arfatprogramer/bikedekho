@@ -9,6 +9,7 @@
       let li = lis[i];
       if (li.textContent === nameElement.textContent) {
         li.classList.add("ad-active"); 
+        document.title=li.textContent;
         break;
       }
     }

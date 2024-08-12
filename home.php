@@ -2,13 +2,15 @@
     <div class="home-text">
     <h1 name="name" style="display:none;">Home</h1>
     <div class="clock">
-        <h1> 30 : 30 : 30 : 30 </h1>
-        <pre>Hours    Minnuts   Seconds  Mili-second </pre>
+        <h1> 00<span> Hours</span> 00<span> Min</span> 00<span> Sec</span></h1>
+        
     </div>
     <div class="home-text-heading">
         <h1>Lunching New Bike</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint laborum sequi fugiat nostrum molestias aspernatur</p>
-        <button class="home-btn">Know More</button>
+        <h2>Ktm 1200Cc</h2>
+            <h3>(Disk Brake )</h3>
+            <p class="Prise"> Rs 2 00 000 </p>
+        <!-- <button class="home-btn">Know More</button> -->
         <a href="./product_view_page.php"><button class="home-btn">Know More</button></a>
     </div>
  
@@ -19,6 +21,7 @@
    
 </div>
 
+ <!-- clock script  -->
 
 <!-- offer tag Design -->
  <!-- offer tag Design -->

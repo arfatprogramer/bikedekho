@@ -12,11 +12,12 @@
                 <p>-Wheelbase : 1366 mm</p>
                 <p>-Cooling : Liquid Cooled</p>
                 <p>-Max Torque : 12 Nm @ 8000 rpm</p>
+                <h1>Prise : 20 00 000</h1>
                 <button class="home-btn">Contac Us</button>
             </div>
 
         </div>
-    <div class="text-div"><img class="image-dive-image" src="./Images/ktm.png" alt="bike image"></div>
+        <div class="text-div"><img class="image-dive-image" src="./Images/ktm.png" alt="bike image"></div>
     </div>
     <!-- offer tag Design -->
     <?php include'offerTag.php'?>

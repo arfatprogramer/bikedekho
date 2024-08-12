@@ -152,8 +152,8 @@ footer{
     
 }
 .home-text-heading{
-    width: 60%;
-    padding: 20px;
+    width: 80%;
+    padding: 10px;
 }
 .home-btn{
     margin: 20px 0;
@@ -164,6 +164,9 @@ footer{
     outline: none;
 }
 
+span{
+    font-size: 20px;
+}
 @keyframes bikemove{
     from{
         right: 0%;
@@ -278,6 +281,9 @@ footer{
     border-radius: 50%;
     color: #b0b6af;
 }
+
+
+
 /* slider-container */
 .slider-container{
     display: flex;

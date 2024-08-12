@@ -53,7 +53,7 @@ function clean_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
-
+$conn->close();
 ?>
 <?php include"./layout/header.php"?>
 <!-- <h1 name="name" style="display:none;">Login</h1> -->
@@ -101,16 +101,16 @@ function clean_input($data) {
    
 </div>
 <script type="text/JavaScript">
-let close = document.getElementById("close");
+    let close = document.getElementById("close");
 
-var el = document.getElementById("loginForm");
-// console.log(el);
+    var el = document.getElementById("loginForm");
+    // console.log(el);
 
-close.addEventListener("click",function(){
+    close.addEventListener("click",function(){
+        
+        el.style.display="none";
     
-    el.style.display="none";
-    
-});
+    });
 </script>
 </main>
 <?php include "./layout/footer.php"; ?> 

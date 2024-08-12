@@ -19,10 +19,11 @@ if( $_SESSION['admin']==false){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
    <link rel="stylesheet" href="admin.css">
    <link rel="stylesheet" href="table.css">
+   <link rel="stylesheet" href="product-form.css">
 </head>
 <body>
   <aside class="aside">
-    <div class="logo"><div class="logo-div"><img class="logo" src="../layout/logo.png" ></div></div>
+    <div class="logo"><div class="logo-div"><img class="logo" src="./logo.png" ></div></div>
     <ul class="aside-ul">
      <a class="aside-a" href="./"><li class="aside-li">Dashboard</li></a>
      <a class="aside-a" href="add_product.php"><li class="aside-li">Add Product</li></a>
