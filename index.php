@@ -1,7 +1,4 @@
-
-
-
-<?php include"./layout/header.php"?>
+<?php include"./layout/header.php";?>
     <main>
         <?php include "home.php"; ?>
     </main>

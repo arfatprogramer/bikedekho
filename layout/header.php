@@ -41,7 +41,7 @@ if(isset($_SESSION['login'])){
             echo" <div class='dropdown'>
                      <button class='nav-btn'>".$_SESSION['username']."</button>
                      <div class='dropdown-content'>
-                        <a href='./profile.php'><li >Profile</li></a>
+                        <a href='./profile_view.php'><li >Profile</li></a>
                         
                         <a href='./logout.php'><li>Loout</li></a>
                      </div>

@@ -20,6 +20,8 @@ if (isset($_POST['submit'])) {
         session_start();
         $_SESSION['login']=true;
         $_SESSION['username']=$row['first_Name'];
+        $_SESSION['ID']=$row['ID'];
+        
         header("location:./");
        }
        elseif($row['user_Type']=='admin'){

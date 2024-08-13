@@ -58,146 +58,31 @@
     <!-- Swiper -->
     <div class="swiper">
         <div class="swiper-wrapper">
+            
+            <?php include "./database/conn.php";
+
+                $sql="SELECT *FROM products";
+                $result = $conn->query($sql);
+            ?>
+   
+            
+            <?php  while($res=mysqli_fetch_assoc($result)){?>
             <div class="swiper-slide">
                 <div class="card">
                     <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
+                        <p class="discount">25%</p>
+                        <img height='200px'src="./Images/<?php echo$res['image'];?>" alt="">
                     </div>
                     <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
+                        <h2><?php echo $res['title'];?></h2>
+                        <h3>(<?php echo $res['breaks'];?>)</h3>
+                        <p class="Prise">Rs. <?php echo $res['price'];?></p>
+                            <button class="card-btn"><a style="color:#fff;font-size:20px;text-decoration:none" href="./product_view_page.php?ID=<?php echo $res['ID'];?>">Know More</a></button>
+                        </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="card-img">
-                        <p class="discount">50%</p>
-                        <img src="./Images/bike1.png" alt="">
-                    </div>
-                    <div class="card-text">
-                        <h2>Card Title</h2>
-                        <h3>(Disk Brake )</h3>
-                        <p class="Prise"> Rs 2 00 000 </p>
-                        <button class="card-btn">Know More</button>
-                    </div>
-                </div>
-            </div>
+            <?php   }?>
+            
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>

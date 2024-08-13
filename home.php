@@ -6,12 +6,12 @@
         
     </div>
     <div class="home-text-heading">
-        <h1>Lunching New Bike</h1>
-        <h2>Ktm 1200Cc</h2>
-            <h3>(Disk Brake )</h3>
-            <p class="Prise"> Rs 2 00 000 </p>
+        <h1>Ktm 1290 Duke R</h1>
+        <h2>Engine Cc :1301 cc</h2>
+            <h3>( Double Disc, Dual Channel ABS)</h3>
+            <h2> Rs. 12 05 000 </h2>
         <!-- <button class="home-btn">Know More</button> -->
-        <a href="./product_view_page.php"><button class="home-btn">Know More</button></a>
+        <a href="./product_view_page.php?ID=3"><button class="home-btn">Know More</button></a>
     </div>
  
     </div>

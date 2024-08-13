@@ -164,6 +164,7 @@ footer{
     outline: none;
 }
 
+
 span{
     font-size: 20px;
 }
@@ -180,8 +181,9 @@ span{
 
 /*Card Css*/
 .card{
-    max-width: 295px;
+    width: 331px;
     /* max-width: 500px; */
+    height: 420px;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -230,6 +232,10 @@ span{
     border: none;
     cursor: pointer;
 }
+.card-btn a{
+    color:#fff;
+    font-size:20px;text-decoration:none
+}
 .Prise{
     margin: 5px;
     font-size: 22px;
@@ -237,10 +243,16 @@ span{
     color: #288d26;
 }
 /* card Hover */
-.card:hover{
+.card:hover {
     background-color: rgb(225, 229, 226);
     box-shadow: 0 0 5px 5px var(--green);
 
+}
+.card-btn:hover{
+    color: #0e100e;
+    box-shadow: 0 0 20px 3px var(--green);
+    
+    
 }
 
 

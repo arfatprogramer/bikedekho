@@ -1,24 +1,40 @@
 <?php include"./layout/header.php"?>
-<h1 name="name" style="display:none;">Product</h1>
-<main>
-    <div class="product">
-        <div class="text-div">
-            <div class="text">
-                <p>(Fashion , Twin Disc)</p>
-                <h1>KTM 125 DUKE</h1>
-                <p>-Engine Cc : 370.0cc</p>
-                <p>-Max Power : 14.5bhp @ 9250 rpm</p>
-                <p>-Tank Capacity : 10.2 L</p>
-                <p>-Wheelbase : 1366 mm</p>
-                <p>-Cooling : Liquid Cooled</p>
-                <p>-Max Torque : 12 Nm @ 8000 rpm</p>
-                <h1>Prise : 20 00 000</h1>
-                <button class="home-btn">Contac Us</button>
+
+<?php include "./database/conn.php";
+
+   if(isset($_GET['ID'])){
+    $id = $_GET['ID'];
+    $sql="SELECT * FROM products WHERE ID=$id";
+    $result = $conn->query($sql);
+    $res=mysqli_fetch_assoc($result);
+    echo "
+         <div class='product'>
+        <div class='text-div'>
+            <div class='text'>
+                <p>( ".$res['breaks'].")</p>
+                <h1>".$res['title']."</h1>
+                <p>-Engine Cc :". $res['engine_cc']." cc</p>
+                <p>-Max Power :". $res['max_power']."</p>
+                <p>-Tank Capacity :". $res['tank_capacity']."</p>
+                <p>-Wheelbase :". $res['wheelbase']."</p>
+                <p>-Cooling :". $res['cooling']."</p>
+                <p>-Max Torque :". $res['max_torque']."</p>
+                <h1>Price : ". $res['price']."</h1>
+                <button class='home-btn'>Contac Us</button>
             </div>
 
         </div>
-        <div class="text-div"><img class="image-dive-image" src="./Images/ktm.png" alt="bike image"></div>
+        <div class='text-div'><img class='image-dive-image' src='./Images/".$res['image']."' alt='bike image'></div>
     </div>
+    ";
+   }
+
+?>
+
+
+<h1 name="name" style="display:none;">Product</h1>
+<main>
+   
     <!-- offer tag Design -->
     <?php include'offerTag.php'?>
     <?php include'slider.php'?>
