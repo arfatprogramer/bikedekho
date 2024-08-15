@@ -20,6 +20,7 @@ if( $_SESSION['admin']==false){
    <link rel="stylesheet" href="admin.css">
    <link rel="stylesheet" href="table.css">
    <link rel="stylesheet" href="product-form.css">
+   <link rel="stylesheet" href="user_update.css">
 </head>
 <body>
   <aside class="aside">

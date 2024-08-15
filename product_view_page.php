@@ -20,7 +20,7 @@
                 <p>-Cooling :". $res['cooling']."</p>
                 <p>-Max Torque :". $res['max_torque']."</p>
                 <h1>Price : ". $res['price']."</h1>
-                <button class='home-btn'>Contac Us</button>
+                <button class='home-btn'>Contact Us</button>
             </div>
 
         </div>

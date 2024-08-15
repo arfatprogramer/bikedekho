@@ -71,7 +71,7 @@
 <a href="./view_product.php"><button class="btn-form" style="--color:#207fe4;--hover-color:#1d72cd ;">View Records</button></a>
 </div>
 
-<!-- black Bos AI  -->
+<!-- images preview  -->
 <script>
   function previewImage(input) {
     if (input.files && input.files[0]) {

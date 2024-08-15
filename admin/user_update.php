@@ -1,19 +1,17 @@
-<?php include"./layout/header.php";
+<?php include"./adminlayot/header.php";?>
+<div class="container">
+  <?php 
+       
+        include "../database/conn.php";
+        $id=$_GET['ID'];
+        $sql="SELECT * FROM users WHERE ID=$id";
 
-if($_SESSION['login']==false){
-    header('Location: ./login.php');
-}
-include "./database/conn.php";
-$id=$_SESSION['ID'];
-$sql="SELECT * FROM users WHERE ID=$id";
+        $result=$conn->query($sql);
+        $res=mysqli_fetch_assoc($result);
+    ?>
 
-$result=$conn->query($sql);
-$res=mysqli_fetch_assoc($result);
-?>
-
-<h1 name="name" style="display:none;">Profile</h1>
-<form action="./database/profile_data_update.php?ID=<?php echo$res['ID']."&"."image=".$res["image"]; ?>" method="post" enctype="multipart/form-data" >
-    <div class="container profile-container-out">
+<form action="./databseFiles/profile_data_update.php ?ID=<?php echo$res['ID']."&"."image=".$res["image"]; ?>" method="post" enctype="multipart/form-data" >
+    <div class=" profile-container-out">
         <div class="profile-container">
 
             <!-- Headding -->
@@ -60,7 +58,7 @@ $res=mysqli_fetch_assoc($result);
                     <input type="file" name="image" id="image" onchange="previewImage(this)">
                 </div>
                 <div class="profile-img-div">
-                <img width="250px" src="./users/<?php echo $res['image'];?>" alt="picachu">
+                <img width="250px" src="../users/<?php echo $res['image'];?>" alt="picachu">
                 </div>
                 
             </div>
@@ -85,4 +83,6 @@ $res=mysqli_fetch_assoc($result);
     }
   }
 </script>
-<?php include "./layout/footer.php"; ?> 
+
+</div>
+<?php include"./adminlayot/footer.php";?>

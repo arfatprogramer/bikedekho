@@ -15,7 +15,7 @@ $res=mysqli_fetch_assoc($result);
 <!-- <div class="profile-container-out"></div> -->
 
 <h1 name="name" style="display:none;">Profile</h1>
-<div class="container profile-container-out">
+<div class="container">
    
     <div class="profile-container">
 
@@ -58,7 +58,7 @@ $res=mysqli_fetch_assoc($result);
          <!-- Profile lef Dive -->
          <div class="profile-left">
             <div class="profile-img-div">
-                <img width="250px" src="./users/<?php echo $res['image'];?>" alt="picachu">
+                <img src="./users/<?php echo $res['image'];?>" alt="picachu">
             </div>
             
         </div>

@@ -70,8 +70,10 @@
             <div class="swiper-slide">
                 <div class="card">
                     <div class="card-img">
-                        <p class="discount">25%</p>
-                        <img height='200px'src="./Images/<?php echo$res['image'];?>" alt="">
+                        <a href="./product_view_page.php?ID=<?php echo $res['ID'];?>    ">
+                            <p class="discount">25%</p>
+                            <img height='200px'src="./Images/<?php echo$res['image'];?>" alt="">
+                        </a>
                     </div>
                     <div class="card-text">
                         <h2><?php echo $res['title'];?></h2>

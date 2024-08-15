@@ -49,7 +49,8 @@ if (isset($_POST['submit'])) {
     if(empty($fname) &&empty($lname) &&empty($phone) &&empty($gmail) &&empty($pass) &&empty($user) && isset($cpass))
       {
             include'./database/conn.php';
-            $sql = "INSERT INTO users (first_Name, last_Name, phone_Number, gmail, username, password) VALUES ('$firstName', '$lastName', '$phoneNumber','$email','$username', '$password')";
+            $image="default.jpg";
+            $sql = "INSERT INTO users (first_Name, last_Name, phone_Number, gmail, username, password, image) VALUES ('$firstName', '$lastName', '$phoneNumber','$email','$username', '$password','$image')";
             if ($conn->query($sql)) {
                 echo "New record created successfully";
               } else {
@@ -65,7 +66,7 @@ function clean_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
-$conn->close();
+
 ?>
 
 
@@ -113,9 +114,14 @@ $conn->close();
                 <p class="p"><?php echo $cpass;?></p>
             </div>
             <div class="inputbox">
+                <h3>Do not have an ACcount? <a href="./login.php"><span style="color:red;font-size:18px">Click here</span></a></h3>
+                
+            </div>
+            <div class="inputbox">
                 <input type="submit" name="submit" id="submit">
                  <!-- <button type="submit" ></button> -->
             </div>
+           
 
         </form>
     </div>

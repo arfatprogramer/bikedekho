@@ -3,7 +3,7 @@
     <div class="left-line"></div>
     <div class="center">
         <div class="circle"></div>
-        <h3>Sepcial Offer</h3>
+        <h3>Special Offer</h3>
         <div class="circle"></div>
     </div>
  </div>

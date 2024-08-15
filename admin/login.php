@@ -1,6 +1,6 @@
 <?php
-session_start();
-$_SESSION['admin']=false;
-header("location:./admin/");
-
+// session_start();
+// if($_SESSION['admin']==false){
+// header("location:./admin/");
+// }
 ?>

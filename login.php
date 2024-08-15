@@ -66,18 +66,22 @@ $conn->close();
         <form action="<?php $_PHP_SELF ?>" method="post">
             <h1>Login form</h1><div class="close" id='close' >X</div>
             <div class="inputbox">
-                <label for="Uname">Username:</label>
+                <label for="Uname">Username</label>
                 <input type="text" name="Uname" id="Uname">
                 <p class="p"><?php echo $user;?></p>
             </div>
             <div class="inputbox">
-                <label for="Password">Password:</label>
+                <label for="Password">Password</label>
                 <input type="password" name="Password" id="Password">
                 <p class="p"><?php echo $pass;?></p>
             </div>
             <div class="inputbox">
+                <h3>Do not have an ACcount? <a href="./signup.php"><span style="color:red;font-size:18px">Click here</span></a></h3>
+                
+            </div>
+            <div class="inputbox">
                 <input type="submit" name="submit" id="submit">
-                 <!-- <button type="submit" ></button> -->
+                 
             </div>
         </form>
     </div>

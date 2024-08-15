@@ -35,8 +35,8 @@ $conn->close();
           $trackser=1;
             while ($res=mysqli_fetch_assoc($result)) {
               if($res['user_Type']=='admin'){
-                continue;
-              }
+                
+              
             
         ?>
         <tr>
@@ -64,7 +64,7 @@ $conn->close();
           <a href="./user_delete.php?ID=<?php echo $res['ID']?>"><button type="button" class="btn btn-danger">Delete</button></a>
           </td>
         </tr>
-        <?php $trackser++; }?>
+        <?php $trackser++; }}?>
       
       </tbody>
     </table>

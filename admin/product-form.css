@@ -67,3 +67,10 @@ input[type=submit]:hover,.btn-form:hover{
 .left{
     width: 50%;
 }
+
+/* css for admin profie view page  */
+.admin_user_image_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }

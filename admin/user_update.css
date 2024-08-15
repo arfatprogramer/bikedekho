@@ -1,12 +1,13 @@
 .profile-container-out{
-    background-image:url("./bg.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
     
 }
 .profile-container{
     height: 80vh;
-    width: 80%;
+    width: 90%;
     box-shadow: 0 0 5px 5px gray;
     display: grid;
   grid-template-areas:
@@ -72,8 +73,27 @@
     overflow: hidden;
     display: grid;
 }
+
 .profile-info-div{
     margin-top: 20px;
+    
+}
+
+.card-btn{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    color: #fff;    
+    background-color:rgb(7, 163, 54);
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.card-btn:hover{
+    color: #0e100e;
+    box-shadow: 0 0 20px 3px rgb(7, 163, 54);
+    
     
 }
 

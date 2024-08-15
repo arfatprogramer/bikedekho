@@ -53,6 +53,8 @@ form{
 .inputbox label{
     display: block;
     width: 100%;
+    font-size: 18px;
+    /* color: #fff; */
 }
 .inputbox input{
     width: 100%;

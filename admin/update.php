@@ -15,7 +15,7 @@ if(isset($_GET['ID'])){
 <div class="form-container">
   <div class="heading"><h1 name="name" class="form-heading">Update Product</h1></div>
 
-  <form action="./databseFiles/update_data.php?ID=<?php echo$ID."&"."image=".$res['image'];;?>" method="post" enctype="multipart/form-data">
+  <form action="./databseFiles/update_data.php?ID=<?php echo$ID."&"."image=".$res['image'];?>" method="post" enctype="multipart/form-data">
   <div class="product-form">
     <div class="left">
 
