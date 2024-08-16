@@ -21,6 +21,9 @@ if (isset($_POST['submit'])) {
         $_SESSION['login']=true;
         $_SESSION['username']=$row['first_Name'];
         $_SESSION['ID']=$row['ID'];
+        $_SESSION['error']="Wellcom ".$row['first_Name'];
+        $_SESSION['btn-color']="danger";
+
         
         header("location:./");
        }
@@ -31,14 +34,18 @@ if (isset($_POST['submit'])) {
         header("location:./admin/");
        }
 
-    }    else{
-        
-        echo"<script type'JavaScritp'>alert('Invalid Ussername And Password')</script>";
-    }
+    } else{
+        // Display error message if username and password are incorrect
+        // session_start();
+        $_SESSION['error'] = "Invalid username or password";
+        $_SESSION['btn-color'] = "danger";
+           
+            
+    }   
     
     //Data Validation 
   
-    if (empty($username)) {
+    if (!empty($username)) {
         $user = "Username is required";
     }
 
@@ -60,11 +67,17 @@ $conn->close();
 <?php include"./layout/header.php"?>
 <!-- <h1 name="name" style="display:none;">Login</h1> -->
 <main>
+<?php if(!empty($_SESSION['error'])){ ?>
+    <div id='close-alert' style='position: absolute;' class='alert-msg alert alert-<?php echo $_SESSION['btn-color']; ?> ' role='alert'>
+        <?php echo $_SESSION['error']; ?><br><button onclick='close_alert()' type='button' class='btn btn-danger'>close</button>
+    </div>
+<?php } ?>
 
 <div class="form-container" id="loginForm">
     <div class="form">
+        
         <form action="<?php $_PHP_SELF ?>" method="post">
-            <h1>Login form</h1><div class="close" id='close' >X</div>
+            <h1>Login</h1><div class="close" id='close' >X</div>
             <div class="inputbox">
                 <label for="Uname">Username</label>
                 <input type="text" name="Uname" id="Uname">

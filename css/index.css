@@ -301,3 +301,21 @@ span{
     display: flex;
 
 }
+
+
+
+
+.alert-msg{
+    position: absolute;
+    height: 300px;
+    left: 30%;
+    z-index: 2;
+    width: 40%;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    font-size: 20px;
+}

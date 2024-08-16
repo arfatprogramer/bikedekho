@@ -19,6 +19,12 @@
         break;
       }
     }
+
+    function close_alert(){
+      document.getElementById('close-alert').remove();
+      
+    }
+
   </script>
 </body>
 

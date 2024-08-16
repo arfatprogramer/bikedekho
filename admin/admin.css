@@ -29,12 +29,14 @@ body{
 .aside .aside-ul .aside-a{
     text-decoration: none;
     color: #fff;
+    position: relative;
 }
 
 .aside .aside-ul .aside-a .aside-li{
     font-size: 1.5rem;
-    padding: 10px 20px;
+    padding: 10px 40px;
     transition: 1s;
+    /* position: relative; */
 }
 .aside .aside-ul .aside-a .aside-li:hover{
     color: rgb(18, 139, 35);
@@ -61,6 +63,14 @@ body{
     border: 2px solid #fff;
 }
 
+/* i tag css */
+i{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 20px;
+
+}
 
 .main{
    
@@ -70,3 +80,109 @@ body{
     background-color: rgb(232, 239, 239);
     overflow: auto;
 }
+
+
+
+
+
+/* new css */
+
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+  }
+  
+
+  
+  h1 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  .col-md-3, .col-md-6 {
+    padding: 10px;
+  }
+  
+  /* Responsive design */
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      margin: 20px;
+    }
+    .card {
+      margin-bottom: 10px;
+    }
+    .table {
+      font-size: 14px;
+    }
+    .col-md-3, .col-md-6 {
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 10px;
+    }
+    .card {
+      margin-bottom: 5px;
+    }
+    .table {
+      font-size: 12px;
+    }
+    .col-md-3, .col-md-6 {
+      padding: 2px;
+    }
+  }
