@@ -33,6 +33,7 @@ if( $_SESSION['admin']==false){
       <a class="aside-a" href="create_new_order.php"><i class="fa-solid fa-plus" style="color: #ffffff;"></i><li class="aside-li">New Order</li></a>
       <a class="aside-a" href="view_orders.php"><i class="fa-brands fa-first-order" style="color: #ffffff;"></i><li class="aside-li">View Orders</li></a>
       <a class="aside-a" href="view_Users.php"><i class="fa-solid fa-users" style="color: #ffffff;"></i><li class="aside-li">View Users</li></a>
+      <a class="aside-a" href="home_page.php"><i class="fa-solid fa-house" style="color: #ffffff;"></i><li class="aside-li">Home Page</li></a>
     
      <li class="aside-logout">
       <img src="./download.jpg" class="profile-img">

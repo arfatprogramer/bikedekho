@@ -67,11 +67,6 @@ $conn->close();
 <?php include"./layout/header.php"?>
 <!-- <h1 name="name" style="display:none;">Login</h1> -->
 <main>
-<?php if(!empty($_SESSION['error'])){ ?>
-    <div id='close-alert' style='position: absolute;' class='alert-msg alert alert-<?php echo $_SESSION['btn-color']; ?> ' role='alert'>
-        <?php echo $_SESSION['error']; ?><br><button onclick='close_alert()' type='button' class='btn btn-danger'>close</button>
-    </div>
-<?php } ?>
 
 <div class="form-container" id="loginForm">
     <div class="form">
@@ -99,26 +94,7 @@ $conn->close();
         </form>
     </div>
 </div> 
-<div class="home-container">
-    <div class="home-text">
-    <div class="clock">
-        <h1> 30 : 30 : 30 : 30 </h1>
-        <pre>Hours    Minnuts   Seconds  Mili-second </pre>
-    </div>
-    <div class="home-text-heading">
-        <h1>Lunching New Bike</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint laborum sequi fugiat nostrum molestias aspernatur</p>
-        <button class="home-btn">Know More</button>
-        <button class="home-btn">Know More</button>
-    </div>
-
-       
-    </div>
-    <div class="home-image">
-        <img class="home-img" src="./Images/ktm.png" alt="img">
-    </div>
-   
-</div>
+<?php include "./home.php";?>
 <script type="text/JavaScript">
     let close = document.getElementById("close");
 
